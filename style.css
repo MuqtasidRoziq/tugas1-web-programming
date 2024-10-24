@@ -4,11 +4,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
   }
 
 header{
-    background-color: aqua;
+    background-color: rgb(122, 208, 181);
     padding: 10px;
     top: 0;
     left: 0;
@@ -48,7 +47,7 @@ nav a{
 }
 
 nav a:hover{
-    color: white;
+    color: rgb(14, 120, 113);
     font-weight: bold;
 }
 
@@ -65,12 +64,10 @@ main{
 
 .image img {
     width: 40%;
-    margin: -10px 5px 10px 10px;
 }
 
 img{
-    margin:-10px 100px 10px 10px;
-    padding-right: 150px;
+    padding-right: 100px;
     padding-top: 80px;
 }
 
@@ -91,7 +88,7 @@ img{
 }
 
 #layanan {
-    background-color: aqua;
+    background-color:  rgb(122, 208, 181);
     color: black;
     padding: 50px 0;
     text-align: center;
@@ -109,22 +106,23 @@ img{
 
 .table-layanan {
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
     border-collapse: collapse;
 }
 
 .table-layanan th, .table-layanan td {
     padding: 10px;
     text-align: left;
-    border: 1px solid white;
     font-size: 16px;
     border-color: #000;
 }
 
 .table-layanan th {
-    background-color: aquamarine; /* Darker green for header */
+    background-color: rgb(0, 128, 128);
+    color: white; 
+    text-align: center;
 }
 
 .table-layanan td {
-    background-color: cyan; /* Lighter green for cells */
+    background-color: white;
 }
