@@ -48,6 +48,7 @@ nav a{
 
 nav a:hover{
     color: rgb(14, 120, 113);
+    transition-duration: 0.5s;
     font-weight: bold;
 }
 
@@ -73,6 +74,7 @@ img{
 
 .title-description{
     margin-bottom: 10px;
+    font-size: 30px;
 }
 
 .description{
@@ -90,12 +92,13 @@ img{
 #layanan {
     background-color:  rgb(122, 208, 181);
     color: black;
-    padding: 50px 0;
+    padding: 100px;
+    padding-bottom: 150px;
     text-align: center;
 }
 
 #layanan h1 {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
@@ -125,4 +128,82 @@ img{
 
 .table-layanan td {
     background-color: white;
+}
+
+.produk{
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#title-produk{
+    padding: 100px;
+    margin-bottom: -100px;
+    padding-bottom: 0;
+}
+#title-produk h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#title-produk p{
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+.box-produk{
+    margin-left: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 20px; 
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    overflow: hidden; /* Menghindari overflow pada gambar */
+    width: 200px; /* Lebar box */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animasi saat hover */
+}
+
+.box-produk:hover {
+    transform: translateY(5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar */
+}
+
+.box-produk img{
+    padding-right: 0;
+    padding-top: 0;
+    width: 100%;
+    height: 230px;
+    border-bottom: 1px solid #ddd;
+}
+
+.box-produk h2{
+    font-size: 20px;
+    margin: 15px 0 5px;
+}
+
+.box-produk p{
+    font-size: 13px;
+}
+
+footer {
+    background-color: rgb(122, 208, 181);
+    padding-top: 10px;
+    display:flex;
+}
+
+#title-footer{
+    font-size: 18px;
+    padding-left: 200px;
+    padding-right: 10px;
+
+}
+
+.link{
+    margin-right: 100px;
 }
