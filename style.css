@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Playwrite+US+Trad&family=Protest+Riot&family=Quicksand:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@1,101&display=swap');
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,6 +17,7 @@ header{
     left: 0;
     right: 0;
     position: fixed;
+    z-index: 1;
 }
 
 header .title{
@@ -26,6 +28,8 @@ header .title{
 }
 
 nav{
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
     display: flex;
     justify-content: space-around;
     margin-right: 20px;
@@ -52,58 +56,61 @@ a{
 
 li:hover{
     background-color: rgb(0, 128, 128);
-    color: white;
     transition-duration: 0.5s;
     font-weight: bold;
+}
+
+a:hover{
+    color: white;
 }
 
 main{
     margin-top: 150px;
 }
-.image {
+
+.decription-container{
     display: flex;
-    justify-content: flex-end; 
-    align-items: flex-start;
-    float: right;
-    padding: 10px;
+    padding: 50px;
+    margin: 50px;
 }
 
-.image img {
-    width: 40%;
-}
-
-img{
-    padding-right: 100px;
-    padding-top: 70px;
-}
-
-.title-description{
-    margin-bottom: 10px;
-    font-size: 30px;
-}
-
-.description{
-    padding: 20px;
-    padding-top: 90px;
-    padding-bottom: 150px;
-    padding-left: 70px;
+.description {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
 }
 
 .description p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-right: 50px;
+}
+
+img {
+    width: 220%;
+}
+
+.image{
+    padding-right: 110px;
+    padding-left: 100px;
+    padding-top: 50px;
 }
 
 #layanan {
     background-color:  rgb(122, 208, 181);
     color: black;
-    padding: 100px;
+    padding: 90px;
     padding-bottom: 150px;
     text-align: center;
 }
 
 #layanan h1 {
-    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-size: 35px;
     margin-bottom: 20px;
 }
 
@@ -139,10 +146,6 @@ img{
     display: flex;
     justify-content: center;
     flex-wrap: wrap; 
-    /* overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: thin;
-    padding: 20px 0; */
     gap: 20px;
 
 }
@@ -176,7 +179,7 @@ img{
 }
 
 .box-produk:hover {
-    transform: translateY(5px);
+    transform: translateY(10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar */
 }
 
@@ -199,7 +202,7 @@ img{
 
 
 .kritik-saran-container {
-    background-color: #ddd;
+    background-color: #f7f7f7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,13 +210,12 @@ img{
 }
 
 .form-kritik-saran {
-    /* text-align: center; */
-    width: 45%;
+    width: 40%;
     padding: 20px;
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .title-kritik-saran h1 {
@@ -265,10 +267,73 @@ button:hover {
     background-color: #0056b3;
 }
 
-footer {
+footer{
     background-color: rgb(122, 208, 181);
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.footer-location-contact{
+    padding-left: 100px;
+    width: 1000px;
+}
+
+.deskripsi-footer-2{
+    padding-left: 15px;
+}
+
+.footer-about{
+    justify-content: center;
+    padding-right: 100px;
+}
+
+.footer-sosial-media{
+    padding-right: 100px;
+    font-size: 25px;
     padding-top: 10px;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:768px){
+
+    .decription-container{
+        padding: 0;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .description{
+        padding-left: 50px;
+        font-size: 15px;
+    }
+
+    .image{
+        margin-right: 30px;
+        padding-left: 20px;
+    }
+
+    #layanan{
+        font-size: 15px;
+    }
+
+    .table-layanan{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form-kritik-saran{
+        width: 50%;
+    }
+
+    .footer-location-contact{
+        padding-top: 12px;
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+
+    .footer-about{
+        padding-right: 30px;
+    }
 }
