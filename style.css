@@ -317,6 +317,7 @@ footer {
 
 .menu-icon{
     display: none;
+    font-size: 30px;
 }
 
 @media (max-width:768px){
@@ -378,6 +379,7 @@ footer {
     .menu-icon {
         display: flex;
         margin:0;
+        align-items: center;
     }
 
     .title {
