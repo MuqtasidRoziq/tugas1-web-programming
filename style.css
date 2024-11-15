@@ -379,7 +379,7 @@ footer {
     .menu-icon {
         display: flex;
         margin:0;
-        align-items: flex-end;
+        justify-content: flex-end;
     }
 
     .title {
