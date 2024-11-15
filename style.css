@@ -374,6 +374,7 @@ footer {
         padding: 10px;
         flex-direction: row;
         align-items: flex-start;
+        padding-bottom: 20px;
     }
 
     .menu-icon {
@@ -414,6 +415,7 @@ footer {
     .description {
         font-size: 16px;
         padding: 0;
+        justify-content: center;
     }
 
     .image{
@@ -421,7 +423,7 @@ footer {
     }
 
     #layanan{
-        padding: 10px 30px;
+        padding: 70px 30px;
 
     }
     #layanan h1 {
